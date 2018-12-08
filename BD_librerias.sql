@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-12-2018 a las 22:43:29
+-- Tiempo de generación: 08-12-2018 a las 22:16:06
 -- Versión del servidor: 10.1.9-MariaDB
 -- Versión de PHP: 5.6.15
 
@@ -30,10 +30,19 @@ CREATE TABLE `autor` (
   `id` int(11) NOT NULL,
   `nombre` varchar(20) COLLATE latin1_spanish_ci DEFAULT NULL,
   `apellido` varchar(20) COLLATE latin1_spanish_ci DEFAULT NULL,
+  `clave` varchar(15) COLLATE latin1_spanish_ci NOT NULL,
   `sexo` varchar(15) COLLATE latin1_spanish_ci DEFAULT NULL,
   `edad` int(11) DEFAULT NULL,
-  `direccion` varchar(60) COLLATE latin1_spanish_ci DEFAULT NULL
+  `direccion` varchar(60) COLLATE latin1_spanish_ci DEFAULT NULL,
+  `telefono` varchar(15) COLLATE latin1_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `autor`
+--
+
+INSERT INTO `autor` (`id`, `nombre`, `apellido`, `clave`, `sexo`, `edad`, `direccion`, `telefono`) VALUES
+(1, 'kevin', 'prado', '123', 'masculino', 23, 'leon', '123');
 
 -- --------------------------------------------------------
 
@@ -91,21 +100,12 @@ CREATE TABLE `ejemplar` (
 CREATE TABLE `libreria` (
   `id` int(11) NOT NULL,
   `clave` varchar(20) COLLATE latin1_spanish_ci NOT NULL,
-  `#RUC` varchar(15) COLLATE latin1_spanish_ci NOT NULL,
+  `RUC` varchar(15) COLLATE latin1_spanish_ci NOT NULL,
   `nombre` varchar(40) COLLATE latin1_spanish_ci NOT NULL,
   `direccion` varchar(60) COLLATE latin1_spanish_ci NOT NULL,
-  `telefono` varchar(15) COLLATE latin1_spanish_ci NOT NULL
+  `telefono` varchar(15) COLLATE latin1_spanish_ci NOT NULL,
+  `correo` varchar(30) COLLATE latin1_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
-
---
--- Volcado de datos para la tabla `libreria`
---
-
-INSERT INTO `libreria` (`id`, `clave`, `#RUC`, `nombre`, `direccion`, `telefono`) VALUES
-(1, '1234', '', 'jlhj', 'ryduyigoi', '12345'),
-(2, '123', '', 'juan', 'tyuio', '1099'),
-(3, '1234', '', 'mario', 'managua', '12345643'),
-(4, '234', '', 'marcio', 'chinandega', '12345664');
 
 -- --------------------------------------------------------
 
@@ -133,6 +133,13 @@ CREATE TABLE `libros` (
   `editorial` varchar(50) COLLATE latin1_spanish_ci NOT NULL,
   `descripcion` varchar(100) COLLATE latin1_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `libros`
+--
+
+INSERT INTO `libros` (`codigo`, `titulo`, `idioma`, `precio`, `autor`, `editorial`, `descripcion`) VALUES
+(1, 'cronicas de narnia', 'englis', 120, 'yelzon', 'la maquina', '200 pg');
 
 -- --------------------------------------------------------
 

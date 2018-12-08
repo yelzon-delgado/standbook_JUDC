@@ -181,7 +181,7 @@
                   <a class="dropdown-item" href="#"><i class="fa fa-heart"></i> Publicaciones</a>
                   <a class="dropdown-item" href="#"><i class="fa fa-cog"></i> Configuraciones</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
+                  <a class="dropdown-item" href="index.html"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
                 </div>
               </li>
               <li class="dropdown dropdown-notification">
@@ -272,10 +272,62 @@
         <li><a href="#">Me Gusta</a></li>
         <li><a href="#">Imagenes</a></li>
         <li><a href="#">Videos</a></li>
-        <li><a href="add_libro.php">Agregar libros</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#registrar_libro">Agregar libros</a></li>
       </ul>
     </div>
   </section>
+
+  <!--Modal registrar libro-->
+<div class="modal fade" role="dialog" id="registrar_libro">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title"><img src="img/iconos/escritor.png"> Registrarse</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="add_libro.php" method="post">
+          <div class="form-group input-icon-left m-b-10">
+                      <i class="fa fa-user"></i>
+                      <input type="text" class="form-control form-control-secondary" name="titulo" placeholder="Titulo">
+                  </div>
+
+                  <div class="form-group input-icon-left m-b-10">
+                      <i class="fa fa-envelope"></i>
+                      <input type="text" class="form-control form-control-secondary" name="idioma" placeholder="Idioma">
+                  </div>
+
+                  <div class="form-group input-icon-left m-b-10">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" class="form-control form-control-secondary" name="precio" placeholder="Precio">
+                  </div>
+
+
+                  <div class="form-group input-icon-left m-b-10">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" class="form-control form-control-secondary" name="autor" placeholder="Autor">
+                </div>
+
+                <div class="form-group input-icon-left m-b-10">
+                  <i class="fa fa-envelope"></i>
+                  <input type="text" class="form-control form-control-secondary" name="editorial" placeholder="Editorial">
+                </div>
+
+                <div class="form-group input-icon-left m-b-10">
+                  <i class="fa fa-envelope"></i>
+                  <input type="text" class="form-control form-control-secondary" name="descripcion" placeholder="Descripcion">
+                </div>
+                    <input type="submit" class="btn btn-primary m-t-10 btn-block" name="guardar" value="Registrar">
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin Modal registrar libro-->
 
   <section class="p-y-30">
     <div class="container">
