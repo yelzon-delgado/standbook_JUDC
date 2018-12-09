@@ -7,4 +7,38 @@ function enviar() {
 	var direccion = document.getElementById("direccion").value;
 	var contraseña = document.getElementById("contraseña").value;
 	var repetir = document.getElementById("repetir").value;
+
+	if (nombre == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (apellido == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (telefono == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (sexo == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (edad == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (direccion == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (contraseña == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+	if (repetir == "") {
+		alert("faltan cmpos por llenar");
+		return;
+	}
+
 }
