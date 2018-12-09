@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="css/theme.min.css">
   <!--Fin Link-->
 
+<!--Script Validaciones-->
+  <script type="text/javascript" src="validaciones/form_escritor.js"></script>
+<!--Fin Script Validaciones-->
 </head>
 <body body class="fixed-header">
   <!--Header-->
@@ -393,48 +396,48 @@
         <form action="add_autor.php" method="post">
           <div class="form-group input-icon-left m-b-10">
                       <i class="fa fa-user"></i>
-                      <input type="text" class="form-control form-control-secondary" name="nombre" placeholder="Nombre">
+                      <input id="nombre" type="text" class="form-control form-control-secondary" name="nombre" placeholder="Nombre">
                   </div>
 
                   <div class="form-group input-icon-left m-b-10">
                       <i class="fa fa-user"></i>
-                      <input type="text" class="form-control form-control-secondary" name="apellido" placeholder="Apellido">
+                      <input id="apellido" type="text" class="form-control form-control-secondary" name="apellido" placeholder="Apellido">
                   </div>
 
                   <div class="form-group input-icon-left m-b-10">
                     <i class="fa fa-fax"></i>
-                    <input type="text" class="form-control form-control-secondary" name="telefono" placeholder="Telefono">
+                    <input id="telefono" type="text" class="form-control form-control-secondary" name="telefono" placeholder="Telefono">
                   </div>
 
 
                   <div class="form-group input-icon-left m-b-10">
                     <i class="fa fa-user"></i>
-                    <input type="text" class="form-control form-control-secondary" name="sexo" placeholder="sexo (masculino/femenino)">
+                    <input id="sexo" type="text" class="form-control form-control-secondary" name="sexo" placeholder="sexo (masculino/femenino)">
                 </div>
 
                 <div class="form-group input-icon-left m-b-10">
                   <i class="fa fa-ruble"></i>
-                  <input type="text" class="form-control form-control-secondary" name="edad" placeholder="Edad">
+                  <input id="edad" type="text" class="form-control form-control-secondary" name="edad" placeholder="Edad">
                 </div>
 
                 <div class="form-group input-icon-left m-b-10">
                   <i class="fa fa-location-arrow"></i>
-                  <input type="text" class="form-control form-control-secondary" name="direccion" placeholder="Direccion">
+                  <input id="direccion" type="text" class="form-control form-control-secondary" name="direccion" placeholder="Direccion">
                 </div>
 
                   <div class="form-group input-icon-left m-b-10">
                       <i class="fa fa-lock"></i>
-                      <input type="password" class="form-control form-control-secondary" name="clave" placeholder="Contraseña">
+                      <input id="contraseña" type="password" class="form-control form-control-secondary" name="clave" placeholder="Contraseña">
                   </div>
 
                   <div class="form-group input-icon-left m-b-10">
                       <i class="fa fa-lock"></i>
-                      <input type="password" class="form-control form-control-secondary" placeholder="Repetir Contraseña">
+                      <input id="repetir" type="password" class="form-control form-control-secondary" placeholder="Repetir Contraseña">
                   </div>
 
                   <div class="divider"><span>Termino de Servicio</span></div>
                     <label class="custom-control custom-checkbox custom-checkbox-primary">
-                      <input type="checkbox" class="custom-control-input">
+                      <input id="chek" type="checkbox" class="custom-control-input">
                       <span class="custom-control-indicator"></span>
                       <span class="custom-control-description">Aceptar <a href="#" data-toggle="modal" data-target="#terms">Terminos de Servicio</a></span>
                     </label>
