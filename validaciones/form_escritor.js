@@ -24,7 +24,7 @@ function enviar() {
 		alert("faltan cmpos por llenar");
 		return;
 	}
-	if (edad == "") {
+	if (edad == "" ) {
 		alert("faltan cmpos por llenar");
 		return;
 	}
